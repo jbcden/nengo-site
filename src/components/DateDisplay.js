@@ -6,11 +6,15 @@ class DateDisplay extends Component {
     dateInput: 'Heisei 21'
   };
 
+  handleInputChange = date => {
+    this.setState({ dateInput: date });
+  };
+
   render() {
     return (
       <div>
         <p>{this.state.dateInput}</p>
-        <DateInput />
+        <DateInput onInputChange={this.handleInputChange} />
       </div>
     );
   }
