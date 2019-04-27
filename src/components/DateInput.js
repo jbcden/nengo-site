@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
+import { japaneseYear } from 'nengo';
 
 class DateInput extends Component {
   handleChange = e => {
-    this.props.onInputChange(e.target.value);
+    const yearInput = Number.parseInt(e.target.value);
+    const japaneseYearInfo = japaneseYear(yearInput);
+
+    if (japaneseYearInfo) {
+      this.props.onInputChange(
+        `${japaneseYearInfo.names.english} ${yearInput -
+          japaneseYearInfo.startYear +
+          1}`
+      );
+    }
   };
 
   render() {
-    return <input type="text" onChange={this.handleChange} />;
+    return <input type="number" onChange={this.handleChange} />;
   }
 }
 

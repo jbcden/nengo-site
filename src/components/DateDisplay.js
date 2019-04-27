@@ -3,7 +3,7 @@ import DateInput from './DateInput';
 
 class DateDisplay extends Component {
   state = {
-    dateInput: 'Heisei 21'
+    dateInput: ''
   };
 
   handleInputChange = date => {
