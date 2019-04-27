@@ -6541,6 +6541,11 @@ negotiator@0.6.1:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
   integrity sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk=
 
+nengo@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/nengo/-/nengo-2.0.0.tgz#842432ce3fdbbd2a98b6c8ad8770ac0b27dcb487"
+  integrity sha512-K2cKixpba0ApwfV/n3OO3r8L5meXotDm3i8NaR7umcUHcpnU4dt5Oows2aLPUiKCJDPxoaF5CMwW8uSZ9Juhyw==
+
 neo-async@^2.5.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
