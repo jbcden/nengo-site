@@ -3,17 +3,17 @@ import DateInput from './DateInput';
 
 class DateDisplay extends Component {
   state = {
-    dateInput: ''
+    dateOutput: ''
   };
 
   handleInputChange = date => {
-    this.setState({ dateInput: date });
+    this.setState({ dateOutput: date });
   };
 
   render() {
     return (
       <div>
-        <p>{this.state.dateInput}</p>
+        <p>{this.state.dateOutput}</p>
         <DateInput onInputChange={this.handleInputChange} />
       </div>
     );
