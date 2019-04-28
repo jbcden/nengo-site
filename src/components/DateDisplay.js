@@ -13,7 +13,7 @@ class DateDisplay extends Component {
   render() {
     return (
       <div>
-        <p>{this.state.dateOutput}</p>
+        <p>{this.state.dateOutput || 'Please enter a year'}</p>
         <DateInput onInputChange={this.handleInputChange} />
       </div>
     );
