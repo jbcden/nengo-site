@@ -6,12 +6,14 @@ class DateInput extends Component {
     const yearInput = Number.parseInt(e.target.value);
     const japaneseYearInfo = japaneseYear(yearInput);
 
-    if (japaneseYearInfo) {
+    if (japaneseYearInfo && Number.isInteger(yearInput)) {
       this.props.onInputChange(
         `${japaneseYearInfo.names.english} ${yearInput -
           japaneseYearInfo.startYear +
           1}`
       );
+    } else {
+      this.props.onInputChange('Please enter a year');
     }
   };
 
