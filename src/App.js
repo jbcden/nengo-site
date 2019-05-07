@@ -7,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Nengo Converter</h1>
         <DateDisplay />
       </div>
     );
