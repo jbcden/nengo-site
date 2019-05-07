@@ -1,12 +1,12 @@
 input {
-  height: 3rem;
-  border-radius: 8px;
-  width: 30vw;
-  background: #6046ff;
-  box-shadow: 0 2rem 4rem 0 #8677ff;
-  font-size: 1.618rem;
-  color: #ffffff;
+  height: var(--input-height);
+  width: var(--input-width);
+  color: var(--input-color);
+  background-color: var(--input-bg-color);
+  box-shadow: var(--input-box-shadow);
+  font-size: var(--input-font-size);
   text-align: center;
+  border-radius: var(--input-border-radius);
   outline: none;
-  border: none;
+  border: var(--input-border);
 }
