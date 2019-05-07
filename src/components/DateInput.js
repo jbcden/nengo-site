@@ -8,9 +8,13 @@ class DateInput extends Component {
 
     if (japaneseYearInfo && Number.isInteger(yearInput)) {
       this.props.onInputChange(
-        `${japaneseYearInfo.names.english} ${yearInput -
+        `${japaneseYearInfo.names.english} Year ${yearInput -
           japaneseYearInfo.startYear +
           1}`
+      );
+    } else if (yearInput) {
+      this.props.onInputChange(
+        'The year you have entered is not yet supported.'
       );
     } else {
       this.props.onInputChange('Please enter a year');
