@@ -1,5 +1,9 @@
-.grid {
-  display: flex;
-  justify-content: center;
+.container {
+  display: grid;
+  // justify-content: center;
   text-align: center;
+  grid-template-rows: 3rem 1fr 3rem;
+  grid-template-columns: 1fr 60vw 1fr;
+  // justify-items: center;
+  height: 100vh;
 }
