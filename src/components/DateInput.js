@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { japaneseYear } from 'nengo';
 
 class DateInput extends Component {
+  static propTypes = {
+    onInputChange: PropTypes.func
+  };
+
   handleChange = e => {
     const yearInput = Number.parseInt(e.target.value);
     const japaneseYearInfo = japaneseYear(yearInput);
