@@ -23,3 +23,15 @@ h3 {
   font-size: var(--h3-font-size);
   font-family: var(--h3-font-family);
 }
+
+@media (max-width: 60em) {
+  html {
+    font-size: var(--base-medium-font-size);
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: var(--base-small-font-size);
+  }
+}
