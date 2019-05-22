@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './styles/app.scss';
 import Hero from './components/Hero';
 import DateDisplay from './components/DateDisplay';
