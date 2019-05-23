@@ -8,7 +8,7 @@ h3 {
   font-family: var(--header-font-family);
   line-height: var(--header-line-height);
   margin: var(--header-margin-bottom) 0;
-  color: var(--header-color);
+  color: var(--font-color);
 }
 
 h1 {
@@ -21,7 +21,7 @@ h2 {
 
 h3 {
   font-size: var(--h3-font-size);
-  font-family: var(--h3-font-family);
+  font-family: var(--paragraph-font-family);
 }
 
 @media (max-width: 60em) {
