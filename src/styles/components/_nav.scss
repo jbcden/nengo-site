@@ -19,3 +19,9 @@
     }
   }
 }
+
+@media (max-width: 60em) {
+  .nav {
+    font-size: var(--base-font-size);
+  }
+}

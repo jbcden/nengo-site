@@ -8,6 +8,7 @@
 
 @media (max-width: 60em) {
   .container {
+    grid-template-rows: 5rem 1fr 5rem;
     grid-template-columns: 0.5fr 3fr 0.5fr;
   }
 }
