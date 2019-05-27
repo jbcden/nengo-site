@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './styles/app.scss';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import DateDisplay from './components/DateDisplay';
+import Home from './pages/Home';
+import About from './pages/About';
 
 class App extends Component {
   render() {
     return (
       <div class="container">
-        <Header />
-        <main class="main">
-          <Hero />
-          <DateDisplay />
-        </main>
-        <footer class="footer" />
+        <Router>
+          <Header />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <footer class="footer" />
+        </Router>
       </div>
     );
   }
