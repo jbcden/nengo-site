@@ -7,7 +7,7 @@ class DateInput extends Component {
     onInputChange: PropTypes.func
   };
 
-  handleChange = e => {
+  onInputChange = e => {
     const yearInput = Number.parseInt(e.target.value);
     const japaneseYearInfo = japaneseYear(yearInput);
 
@@ -27,7 +27,7 @@ class DateInput extends Component {
   };
 
   render() {
-    return <input type="number" onChange={this.handleChange} />;
+    return <input type="number" onChange={this.onInputChange} />;
   }
 }
 
