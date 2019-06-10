@@ -11,6 +11,10 @@ class DateInput extends Component {
     const yearInput = Number.parseInt(e.target.value);
     const japaneseYearInfo = japaneseYear(yearInput);
 
+    this.validate(japaneseYearInfo, yearInput);
+  };
+
+  validate = (japaneseYearInfo, yearInput) => {
     if (japaneseYearInfo && Number.isInteger(yearInput)) {
       this.props.onInputChange(
         `${japaneseYearInfo.names.english} Year ${yearInput -
