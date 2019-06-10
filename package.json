@@ -32,9 +32,6 @@
     "predeploy": "npm run po2json && npm run build",
     "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "homepage": "https://nengo.io",
   "browserslist": [
     ">0.2%",
