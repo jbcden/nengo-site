@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { japaneseYear } from 'nengo';
 
-class DateDisplay extends Component {
+class DateField extends Component {
   static propTypes = {
     dateOutput: PropTypes.string.isRequired,
     validate: PropTypes.func,
@@ -42,4 +42,4 @@ class DateDisplay extends Component {
   }
 }
 
-export default DateDisplay;
+export default DateField;
