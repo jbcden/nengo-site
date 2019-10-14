@@ -17,4 +17,8 @@ describe('DateField', () => {
       ])
     ).toBeTruthy();
   });
+
+  it('should start with an enter the year placeholder', () => {
+    expect(wrapper.state('dateOutput')).toEqual('Please enter a year');
+  });
 });
