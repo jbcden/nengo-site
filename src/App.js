@@ -8,12 +8,12 @@ import About from './pages/About';
 class App extends Component {
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <Router>
           <Header />
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <footer class="footer" />
+          <footer className="footer" />
         </Router>
       </div>
     );

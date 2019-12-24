@@ -4,7 +4,7 @@ import DateField from '../components/DateField';
 
 function Home() {
   return (
-    <main class="main">
+    <main className="main">
       <Hero />
       <DateField />
     </main>
