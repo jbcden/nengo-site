@@ -3,6 +3,7 @@
     "browser": true,
     "es6": true,
     "jest": true,
+    "commonjs": true
   },
   "plugins": [
     "react", "jsx-a11y", "import", "prettier"
@@ -12,6 +13,7 @@
     "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
