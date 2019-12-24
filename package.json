@@ -49,6 +49,6 @@
     "eslint-plugin-react": "^7.17.0",
     "prettier": "1.19.1",
     "stylelint": "^11.1.1",
-    "ttag-cli": "^1.7.13"
+    "ttag-cli": "^1.7.27"
   }
 }
