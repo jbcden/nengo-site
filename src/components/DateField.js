@@ -20,24 +20,12 @@ const DateField = () => {
     setDateOutput(value);
   };
 
-<<<<<<< HEAD
   return (
     <div className="date-display">
-      <h2 className="date-display-header">{dateOutput}</h2>
+      <h2>{dateOutput}</h2>
       <input type="number" onChange={onInputChange} />;
     </div>
   );
 };
-=======
-  render() {
-    return (
-      <div className="date-display">
-        <h2 className="date-display-header">{this.state.dateOutput}</h2>
-        <input type="number" onChange={this.onInputChange} />
-      </div>
-    );
-  }
-}
->>>>>>> Added render test for DateField
 
 export default DateField;
